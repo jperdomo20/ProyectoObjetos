@@ -1,9 +1,25 @@
+
 /* 
- * File:   Tablero.hpp
- * Author: ma0
- *
- * Created on 10 de noviembre de 2013, 01:01 PM
+   Proyecto de Andres Felipe Munñoz, Jose Miguel Perdomo.
+   Ayuda de Carlos Rocero
+
+   Porcentaje de ayuda = 25%
+   Ayudo en el rediseño del software, y en algunas falencias de la implementacion del software.
+
  */
+
+
+// Especifica las funciones de la clase Tablero
+
+/*
+
+Esta clase se encarga del espacio de funcionamiento donde se van a relacionar 
+los jugadores y juegos que se implementen
+
+
+*/
+
+
 
 #ifndef TABLERO_HPP
 #define	TABLERO_HPP

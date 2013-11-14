@@ -1,9 +1,22 @@
+
 /* 
- * File:   Archivos.hpp
- * Author: ma0
- *
- * Created on 10 de noviembre de 2013, 12:58 PM
+   Proyecto de Andres Felipe Muñoz, Jose Miguel Perdomo.
+   Ayuda de Carlos Rocero
+
+   Porcentaje de ayuda = 25%
+   Ayudo en el rediseño del software, y en algunas falencias de la implementacion del software.
+
  */
+
+// Especifica las funciones de la clase Archivos.
+/*
+
+	Esta clase se encarga de los archivos .txt,
+	usados en otras clases como tablero o principalmente puntajes.
+
+
+
+*/
 
 #ifndef ARCHIVOS_HPP
 #define	ARCHIVOS_HPP

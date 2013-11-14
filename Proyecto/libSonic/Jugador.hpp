@@ -1,9 +1,23 @@
+
 /* 
- * File:   Jugador.hpp
- * Author: ma0
- *
- * Created on 10 de noviembre de 2013, 03:38 PM
+   Proyecto de Andres Felipe Muñoz, Jose Miguel Perdomo.
+   Ayuda de Carlos Rocero
+
+   Porcentaje de ayuda = 25%
+   Ayudo en el rediseño del software, y en algunas falencias de la implementacion del software.
+
  */
+
+
+// Especifica las funciones de la clase jugador
+
+/*
+
+Esta clase se encarga de todos los atributos y 
+caracteristicas de los jugadores
+
+
+*/
 
 #ifndef JUGADOR_HPP
 #define	JUGADOR_HPP

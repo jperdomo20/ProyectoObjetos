@@ -1,9 +1,24 @@
+
 /* 
- * File:   Puntajes.hpp
- * Author: ma0
- *
- * Created on 10 de noviembre de 2013, 03:48 PM
+   Proyecto de Andres Felipe Muñoz, Jose Miguel Perdomo.
+   Ayuda de Carlos Rocero
+
+   Porcentaje de ayuda = 25%
+   Ayudo en el rediseño del software, y en algunas falencias de la implementacion del software.
+
  */
+
+
+// Especifica las funciones de la clase puntajes
+
+/*
+
+Esta clase se encarga de todos los puntajes y 
+posiciones de los jugadores
+
+
+*/
+
 
 #ifndef PUNTAJES_HPP
 #define	PUNTAJES_HPP

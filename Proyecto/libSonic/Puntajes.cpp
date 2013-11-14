@@ -1,8 +1,11 @@
+
 /* 
- * File:   Puntajes.cpp
- * Author: ma0
- * 
- * Created on 10 de noviembre de 2013, 03:48 PM
+   Proyecto de Andres Felipe Muñoz, Jose Miguel Perdomo.
+   Ayuda de Carlos Rocero
+
+   Porcentaje de ayuda = 25%
+   Ayudo en el rediseño del software, y en algunas falencias de la implementacion del software.
+
  */
 
 #include "Puntajes.hpp"
@@ -19,7 +22,7 @@ Puntajes::Puntajes(const Puntajes& orig) {
 Puntajes::~Puntajes() {
 }
 
-void Puntajes::ingresarNuevoPuntaje(string nombre, int puntaje)
+void Puntajes::ingresarNuevoPuntaje(string nombre, int puntaje) // Ingresa un nuevo puntaje al nombre dado
 {
     cout<<"Ingresando: "<<nombre<<endl;
     int * nuevosPuntajes=new int[tam+1];
@@ -70,12 +73,12 @@ void Puntajes::ingresarNuevoPuntaje(string nombre, int puntaje)
     imprimirPuntajes();
     guardarPuntajes();
 }
-string** Puntajes::retornarPuntajes()
+string** Puntajes::retornarPuntajes() // Retorna los puntajes
 {
     return puntajes;
 }
 
-void Puntajes::cargarPuntajes()
+void Puntajes::cargarPuntajes()  //Carga los puntajes del archivo txt 
 {
     Archivos archivo;
     string texto=archivo.LeerArchivo("puntajes.txt");
@@ -106,7 +109,7 @@ void Puntajes::cargarPuntajes()
     }
 }
 
-void Puntajes::guardarPuntajes()
+void Puntajes::guardarPuntajes() // Guarda los puntajes
 {
     string texto="";
     stringstream ss;
@@ -122,7 +125,7 @@ void Puntajes::guardarPuntajes()
     
 }
 
-void Puntajes::imprimirPuntajes()
+void Puntajes::imprimirPuntajes() // Imprime los puntajes.
 {
     cout<<"Imprimiendo Puntajes\n";
     for(int i=0;i<tam;i++)

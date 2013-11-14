@@ -1,8 +1,11 @@
+
 /* 
- * File:   Tablero.cpp
- * Author: ma0
- * 
- * Created on 10 de noviembre de 2013, 01:01 PM
+   Proyecto de Andres Felipe Munñoz, Jose Miguel Perdomo.
+   Ayuda de Carlos Rocero
+
+   Porcentaje de ayuda = 25%
+   Ayudo en el rediseño del software, y en algunas falencias de la implementacion del software.
+
  */
 
 #include "Tablero.hpp"
@@ -17,7 +20,7 @@ Tablero::Tablero(int i, int j)
 {
 	crearTablero( i,  j);
 }
-void Tablero::crearTablero(int i, int j)
+void Tablero::crearTablero(int i, int j) // Crea un tablero segun las dimensiones dadas
 {
 	tami=i;
 	tamj=j;
@@ -37,12 +40,12 @@ void Tablero::crearTablero(int i, int j)
 	}
 	
 }
-void Tablero::agregarElemento(string elemento, int i, int j)
+void Tablero::agregarElemento(string elemento, int i, int j) //  Agrega un elemento al tablero segun la posicion dada
 {
 	if(enRango(i,j))
 		tablero[i][j]=elemento;
 }
-void Tablero::moverElemento(int iInicio, int jInicio,int iFinal, int jFinal )
+void Tablero::moverElemento(int iInicio, int jInicio,int iFinal, int jFinal ) // Mueve un elemento segun su posicion incial y dado la final
 {
 	if(enRango(iInicio,jInicio)&&enRango(iFinal,jFinal))
 	{
@@ -50,14 +53,14 @@ void Tablero::moverElemento(int iInicio, int jInicio,int iFinal, int jFinal )
 		tablero[iInicio][jInicio]="";
 	}
 }
-string Tablero::obtenerElemento(int i, int j)
+string Tablero::obtenerElemento(int i, int j) // Retorna el elemento de la posicion dada
 {
 	if(enRango(i,j))
 		return tablero[i][j];
 	else
 		return "";
 }
-bool Tablero::estaVacia(int i,int j )
+bool Tablero::estaVacia(int i,int j ) // Retorna si tal posicion contiene un elemento o esta vacia.
 {
 	if(enRango(i,j))
 	{
@@ -69,7 +72,7 @@ bool Tablero::estaVacia(int i,int j )
 	return false;
 	
 }
-void Tablero::guardarTablero()
+void Tablero::guardarTablero() // Guarda el tablero en un archivo txt
 {
 	string guardar="";
 	stringstream ss,ss1;
@@ -90,7 +93,7 @@ void Tablero::guardarTablero()
 	Archivos archivo;
 	archivo.EscribirArchivo("tablero.txt",guardar);
 }
-void Tablero::cargarTablero()
+void Tablero::cargarTablero() // CArga el tablero del archivo txt
 {
 	Archivos archivo;
 	string texto=archivo.LeerArchivo("tablero.txt");
@@ -120,7 +123,7 @@ void Tablero::cargarTablero()
             texto=texto.substr(texto.find("\n")+1);
         }
 }
-bool Tablero::enRango(int i, int j)
+bool Tablero::enRango(int i, int j) //Verifica si tal posicion esta en el rango del tablero
 {
 	if(i>=0&&i<tami&&j>=0&&j<tamj)
 		return true;
@@ -132,7 +135,7 @@ bool Tablero::enRango(int i, int j)
 }
 
 
-void Tablero::imprimirTablero()
+void Tablero::imprimirTablero() // Imprime el tablero
 {
     for(int i=0;i<tami;i++)
         {
